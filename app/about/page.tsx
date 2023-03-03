@@ -1,7 +1,6 @@
 "use client";
 import Layout from "@/common/Layout";
 import {
-  Flex,
   Container,
   Heading,
   Stack,
@@ -50,12 +49,6 @@ export default function CallToActionWithIllustration() {
               Learn more
             </Button>
           </Stack>
-          <Flex w={"full"}>
-            <Illustration
-              height={{ sm: "24rem", lg: "28rem" }}
-              mt={{ base: 12, sm: 16 }}
-            />
-          </Flex>
         </Stack>
       </Container>
     </Layout>
