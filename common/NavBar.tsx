@@ -27,6 +27,8 @@ function NavBar() {
     <Box
       bg={useColorModeValue("gray.100", "gray.900")}
       px={[3, 5, 9]}
+      position="sticky"
+      top={0}
       py={[0, 0, 2]}
     >
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
@@ -41,23 +43,19 @@ function NavBar() {
         <Flex alignItems={"center"}>
           <Stack direction={"row"} spacing={7}>
             {currentRoute === "/" ? (
-              <Link href="/about">
-                <Button pr="8px">
-                  <HStack spacing="2px">
-                    <Text>Courses</Text>
-                    <ChevronRightIcon h="22px" w="22px" />
-                  </HStack>
-                </Button>
-              </Link>
+              <Button as={Link} href="/about" pr="8px">
+                <HStack spacing="2px">
+                  <Text>Courses</Text>
+                  <ChevronRightIcon h="22px" w="22px" />
+                </HStack>
+              </Button>
             ) : (
-              <Link href="/">
-                <Button pl="8px">
-                  <HStack spacing="2px">
-                    <ChevronLeftIcon h="22px" w="22px" />
-                    <Text>Home</Text>
-                  </HStack>
-                </Button>
-              </Link>
+              <Button as={Link} href="/" pl="8px">
+                <HStack spacing="2px">
+                  <ChevronLeftIcon h="22px" w="22px" />
+                  <Text>Home</Text>
+                </HStack>
+              </Button>
             )}
             <Button onClick={toggleColorMode}>
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}

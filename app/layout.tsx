@@ -2,12 +2,7 @@
 import "@fontsource/golos-ui/400.css";
 import "@fontsource/golos-ui/500.css";
 import "@fontsource/golos-ui/600.css";
-import {
-  Box,
-  ChakraProvider,
-  useColorMode,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import "./globals.css";
 import theme from "@/config/theme";
 import NavBar from "@/common/NavBar";

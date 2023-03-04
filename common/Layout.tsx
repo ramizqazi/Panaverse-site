@@ -12,7 +12,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   };
 
   return (
-    <Box h="100%" bg={useColorModeValue("gray.100", "gray.900")}>
+    <Box bg={useColorModeValue("gray.100", "gray.900")}>
       <motion.main
         variants={variants}
         initial="hidden"
