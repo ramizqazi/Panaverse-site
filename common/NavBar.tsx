@@ -27,8 +27,6 @@ function NavBar() {
     <Box
       bg={useColorModeValue("gray.100", "gray.900")}
       px={[3, 5, 9]}
-      position="sticky"
-      top={0}
       py={[0, 0, 2]}
     >
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
