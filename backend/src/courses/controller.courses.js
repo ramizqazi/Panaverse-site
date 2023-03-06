@@ -1,11 +1,11 @@
-const { CoreCourse } = require('../modals');
+const { Course } = require('../modals');
 
 /**
- * GET /core-courses
+ * GET /courses
  */
-exports.getCoreCourses = async (req, res, next) => {
+exports.getCourses = async (req, res, next) => {
   try {
-    const response = await CoreCourse.find({});
+    const response = await Course.find({});
 
     response.data = response.forEach((course) => course.toJSON());
     res.status(200).json(response);
@@ -16,13 +16,13 @@ exports.getCoreCourses = async (req, res, next) => {
 };
 
 /**
- * GET /core-courses/:id
+ * GET /courses/:id
  */
-exports.getCoreCourse = async (req, res, next) => {
+exports.getCourse = async (req, res, next) => {
   const { id } = req.params;
 
-  // Get course
-  CoreCourse.findById(id)
+  // Get courses
+  Course.findById(id)
     .exec((err, course) => {
       if (err) {
         next();

@@ -1,2 +1,1 @@
-exports.Specialization = require('./Specialization');
-exports.CoreCourse = require('./CoreCourse');
+exports.Course = require('./Course');

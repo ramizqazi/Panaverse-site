@@ -44,7 +44,7 @@ export default function HomeQuoteSection() {
           is community of Web 3.0 and Metaverse developers, designers, trainers,
           startup founders and service providers."
         </AnimatedText>
-        <AnimatedText fontWeight={"bold"}>
+        <AnimatedText textAlign="right" fontWeight={"bold"}>
           ~ Zia Khan
           <chakra.span color={"gray.500"}> - CEO</chakra.span>
         </AnimatedText>

@@ -5,8 +5,7 @@ const logger = require('morgan');
 const debug = require('debug')('server:bin/www');
 
 const { MONGODB_URI } = require('./config/secrets.config');
-const CoreCoursesRouter = require('./core-courses/route.core-courses');
-const SpecializationsRouter = require('./specializations/route.specializations');
+const CoursesRouter = require('./courses/route.courses');
 
 const app = express();
 
@@ -21,7 +20,6 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true })
 app.use(logger('dev'));
 app.use(cors());
 app.use(express.json());
-app.use('/core-courses', CoreCoursesRouter);
-app.use('/specializations', SpecializationsRouter);
+app.use('/courses', CoursesRouter);
 
 module.exports = app;

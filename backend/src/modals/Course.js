@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 
-const Specialization = new Schema({
+const Course = new Schema({
   name: {
     type: String,
     required: [true, 'Name is required'],
@@ -17,17 +17,17 @@ const Specialization = new Schema({
   },
 }, { timestamps: true });
 
-Specialization.index({
+Course.index({
   name: 'text',
 });
 
-// Specialization.index({
+// Course.index({
 //   store: {
 //     name: 1,
 //   },
 // });
 
-Specialization.methods.toJSON = function toJSON() {
+Course.methods.toJSON = function toJSON() {
   return {
     id: this._id,
     name: this.name,
@@ -36,4 +36,4 @@ Specialization.methods.toJSON = function toJSON() {
   };
 };
 
-module.exports = mongoose.model('specializations', Specialization);
+module.exports = mongoose.model('courses', Course);
