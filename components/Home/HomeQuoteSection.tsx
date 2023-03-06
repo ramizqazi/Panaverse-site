@@ -6,7 +6,13 @@ import AnimatedText from "@/common/AnimatedText";
 export default function HomeQuoteSection() {
   return (
     <Stack mb={10}>
-      <Card h="full" justifyContent="center" py={24} px={[5, 5, 40]}>
+      <Card
+        h="full"
+        shadow="xl"
+        justifyContent="center"
+        py={24}
+        px={[5, 5, 40]}
+      >
         <AnimatedText fontSize={{ base: "24px", md: "28px", lg: "45px" }}>
           "The Future of the Web is Web 3.0, Metaverse, and Edge Computing.
           Panaverse DAO is a movement to spread these technolgies globally. It

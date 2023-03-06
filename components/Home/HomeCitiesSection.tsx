@@ -5,9 +5,9 @@ import { Card, Stack, Image, Grid, GridItem } from "@chakra-ui/react";
 
 export default function HomeCitiesSection() {
   return (
-    <Stack my={32}>
-      <Card h="full" px={8} py={16}>
-        <AnimatedText fontSize="3xl" textAlign="left">
+    <Stack my={24}>
+      <Card h="full" shadow="xl" px={[5, 5, 32]} py={[10, 10, 32]}>
+        <AnimatedText fontSize="4xl" textAlign="left">
           Classes in Karachi, Lahore, Islamabad, and Peshawar
         </AnimatedText>
         <AnimatedText fontSize="md" textAlign="left">
