@@ -1,1 +1,0 @@
-exports.Course = require('./Course');
