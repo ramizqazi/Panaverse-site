@@ -41,7 +41,7 @@ function NavBar() {
         <Flex alignItems={"center"}>
           <Stack direction={"row"} spacing={7}>
             {currentRoute === "/" ? (
-              <Button as={Link} href="/about" pr="8px">
+              <Button as={Link} href="/courses" pr="8px">
                 <HStack spacing="2px">
                   <Text>Courses</Text>
                   <ChevronRightIcon h="22px" w="22px" />

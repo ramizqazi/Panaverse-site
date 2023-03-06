@@ -30,7 +30,7 @@ export default function HomeHeroSection() {
         <Button
           as={Link}
           px={6}
-          href="/about"
+          href="/courses"
           rounded={"full"}
           colorScheme={"red"}
           bg={"red.500"}
