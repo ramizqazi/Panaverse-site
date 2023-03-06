@@ -2,13 +2,13 @@
 
 # dependencies
 /node_modules
-/backend
 /.pnp
 .pnp.js
 
 # testing
 /coverage
 
+/backend/
 # next.js
 /.next/
 /out/
