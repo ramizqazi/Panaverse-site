@@ -5,7 +5,7 @@ import { Card, Stack, Image, Grid, GridItem } from "@chakra-ui/react";
 
 export default function HomeCitiesSection() {
   return (
-    <Stack my={32}>
+    <Stack my={28}>
       <Card h="full" shadow="xl" px={[16, 16, 32]} py={20}>
         <AnimatedText fontSize="4xl" textAlign="left">
           Classes in Karachi, Lahore, Islamabad, and Peshawar

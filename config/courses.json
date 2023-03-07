@@ -1,0 +1,26 @@
+[
+  {
+    "id": "6400906792ac3f7db5d006b7",
+    "name":"Web 3.0 (Blockchain) and Metaverse Specialization",
+    "image":"https://nextjs-panaverse-website.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fs01.9a5d6c0f.webp&w=384&q=75",
+    "description":"In this course you will learn how to develop Web 3.0 DApps, create a project, deploy it in production, write smart contracts, unit test them, and create user interfaces for them. We will also learn to develop ERC-20 and NFT tokens, DAOs, Oracles, etc. Please note that in order to develop Web 3 applications you also need to build on top of Web 2.0 technologies which we have already covered in the previous quarters.\n"
+  },
+  {
+    "id":"6400913192ac3f7db5d006b8",
+    "name":"Artificial Intelligence (AI) and Deep Learning Specialization",
+    "image":"https://nextjs-panaverse-website.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fs02.088d9940.webp&w=384&q=75",
+    "description":"Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. The AI and Deep Learning Specialization is a foundational program that will aid in your comprehension of deep learning's potential, difficulties, and effects as well as equip you to take part in the creation of cutting-edge AI technology.\n\nWe will start this course by understanding the fundamentals and use cases for AI and move on to building next-gen intelligent apps using OpenAI’s powerful models and Next.js 13.\n\nWe'll conclude the course by learning about basic programming concepts using Python, such as lists, dictionaries, classes, functions, and loops, and practice writing clean and readable code with exercises for each topic. We'll also learn how to make your programs interactive and how to test your code safely before adding it to a project. It is a fast-paced, thorough introduction to programming with Python 3.10+ that will have you writing programs, solving problems, and making things that work in no time. In this quarter we will also learn Git, the distributed version control system. We will also review Git-based GitHub services."
+  },
+  {
+    "id":"6400915d92ac3f7db5d006b9",
+    "name":"Cloud-Native Computing Specialization\n",
+    "image":"https://nextjs-panaverse-website.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fs03.a373d3ff.webp&w=384&q=75",
+    "description":"Cloud-native architecture and technologies are an approach to designing, constructing, and operating workloads that are built in the cloud and take full advantage of the cloud computing model. Cloud-native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.\n\nThese techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.\n\nKubernetes is an open-source system for automating the deployment, scaling, and management of containerized applications. In this course, you will learn how to develop cloud applications using cloud-native technologies like Containers, Kubernetes, and CDK for Kubernetes."
+  },
+  {
+    "id":"640091d692ac3f7db5d006bb",
+    "name":"Ambient Computing and IoT Specialization\n",
+    "image":"https://nextjs-panaverse-website.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fs04.eb544def.webp&w=384&q=75",
+    "description":"Ambient computing, also commonly referred to as ubiquitous computing, is the concept of blending computing power into our everyday lives in a way that is embedded into our surroundings - invisible but useful. In a multi-device world, people don't want to spend their life fussing with technology. An ambient approach gets the tech out of your way so you can live your life while getting the help you need. It doesn't matter what device you're using, what context you're in, whether you're talking, typing, or tapping. The technology in your life works together seamlessly. Ambient computing uses all aspects of modern-day technology, including voice assistants, artificial intelligence, sensors, connectivity, cloud computing and more.\n\nIf you were thinking that the IoT and ambient computing sound a lot alike, you aren't wrong; the two concepts are intertwined. IoT refers to the vast array of devices that connect to the internet to optimize their functionality, like smart sensors and smart speakers: ambient computing builds on that. Ambient computing focuses on the interaction between these devices once they are connected.\n\nMatter, the next-generation smart home standard, solves many smart home pain points while bringing all our IoT devices together. Some of the biggest tech companies are working together to make Matter a unified protocol for future smart homes. These companies include Apple, Amazon, and Google. This means Apple HomeKit, Amazon Alexa, Samsung SmartThings, Google Nest, and Samsung SmartThings will support the Matter standard by default for all new devices.\n\nIn this course we will learn to build smart homes with Amazon Alexa and Matter protocol."
+  }
+]

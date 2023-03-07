@@ -14,7 +14,7 @@ import {
 import { motion } from "framer-motion";
 
 type CourseType = {
-  id: number;
+  id: string;
   name: string;
   image: string;
   description: string;
