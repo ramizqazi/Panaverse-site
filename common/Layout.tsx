@@ -3,7 +3,13 @@ import { motion } from "framer-motion";
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import { usePathname } from "next/navigation";
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+const Layout = ({
+  children,
+  ...containerStyles
+}: {
+  children: React.ReactNode;
+  [containerStyles: string]: any;
+}) => {
   const currentRoute = usePathname();
 
   const variants = {
@@ -13,7 +19,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   };
 
   return (
-    <Box bg={useColorModeValue("gray.100", "gray.900")}>
+    <Box {...containerStyles} bg={useColorModeValue("gray.100", "gray.900")}>
       <motion.main
         variants={variants}
         initial="hidden"

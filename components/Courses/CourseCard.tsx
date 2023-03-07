@@ -1,24 +1,9 @@
 "use client";
-import { fadeIn } from "@/util/animations";
-import {
-  Box,
-  Button,
-  Card,
-  Flex,
-  Heading,
-  Image,
-  Stack,
-  Text,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import Link from "next/link";
 import { motion } from "framer-motion";
-
-type CourseType = {
-  id: string;
-  name: string;
-  image: string;
-  description: string;
-};
+import { fadeIn } from "@/util/animations";
+import { CourseType } from "@/config/types";
+import { Box, Button, Card, Heading, Image, Stack } from "@chakra-ui/react";
 
 const CourseCard = ({
   course,
@@ -29,17 +14,17 @@ const CourseCard = ({
 }) => {
   return (
     <Card
+      p={5}
+      w={"full"}
+      shadow="2xl"
       as={motion.div}
       initial="hidden"
-      whileInView="show"
-      whileHover={{ scale: 1.1 }}
-      variants={fadeIn("up", "tween", 0.2, index ?? 1)}
-      shadow="2xl"
-      maxW={{ base: "full", md: "275px" }}
-      w={"full"}
       borderRadius="lg"
       overflow="hidden"
-      p={5}
+      whileInView="show"
+      whileHover={{ scale: 1.1 }}
+      maxW={{ base: "full", md: "275px" }}
+      variants={fadeIn("up", "tween", 0.2, index ?? 1)}
     >
       <Stack align={"start"} spacing={2}>
         <Image
@@ -51,7 +36,13 @@ const CourseCard = ({
         <Box mt={2}>
           <Heading size="md">{course?.name}</Heading>
         </Box>
-        <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
+        <Button
+          as={Link}
+          href={`/courses/${course.id}`}
+          variant={"link"}
+          colorScheme={"blue"}
+          size={"sm"}
+        >
           Learn more
         </Button>
       </Stack>
