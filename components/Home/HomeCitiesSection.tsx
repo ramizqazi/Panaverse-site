@@ -27,7 +27,7 @@ export default function HomeCitiesSection() {
         <Grid
           mt={8}
           gap={6}
-          templateColumns="repeat(4, 25%)"
+          templateColumns="repeat(auto-fill, minmax(280px, 1fr))"
         >
           <GridItem
             as={motion.div}

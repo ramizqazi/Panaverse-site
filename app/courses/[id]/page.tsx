@@ -44,7 +44,7 @@ export default function CallToActionWithIllustration({
         <Box
           marginTop={{ base: "1", sm: "5" }}
           display="flex"
-          flexDirection={{ base: "column", sm: "row" }}
+          flexDirection={{ base: "column", md: 'column', lg: "row" }}
           justifyContent="space-between"
         >
           <Box
@@ -85,7 +85,7 @@ export default function CallToActionWithIllustration({
             flex="1"
             flexDirection="column"
             justifyContent="center"
-            marginTop={{ base: "3", sm: "0" }}
+            marginTop={{ base: "3", sm: "6" }}
           >
             <AnimatedText
               textAlign="left"
